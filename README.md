@@ -19,7 +19,7 @@ Graduate
 Gary Gensler. 15.S12 Blockchain and Money. Fall 2018. Massachusetts Institute of Technology: MIT OpenCourseWare, https://ocw.mit.edu. License: Creative Commons BY-NC-SA.
 ```
 
-Here I will document the my study and reading about blockchain technology in this course. 
+Here I will document the my study and reading about blockchain technology in this course.
 
 ## Table of Contents
 
