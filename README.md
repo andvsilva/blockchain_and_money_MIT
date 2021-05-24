@@ -27,7 +27,7 @@ Here I will document the my study and reading about blockchain technology in thi
 
 - [Introduction](https://www.youtube.com/watch?v=EH6vE97qIP4&list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn)
 - Act 1: Blockchain and Money Fundamentals
-- [Money, Ledgers, and Bitcoin]()
+- [Money, Ledgers, and Bitcoin](https://www.youtube.com/watch?v=5auv_xrvoJk&list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn&index=2&ab_channel=MITOpenCourseWareMITOpenCourseWare)
 - [Blockchain Basics and Cryptography]()
 - [Blockchain Basics and Consensus]()
 - [Blockchain Basics and Transactions, UTXO, and Script Code]()
@@ -59,7 +59,7 @@ Here I will document the my study and reading about blockchain technology in thi
 ### Study questions:
 I will answer the questions based on the lectures of this course.
 
-- ### [Introduction]():
+- ### [Introduction](https://www.youtube.com/watch?v=EH6vE97qIP4&list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn):
   - 1 - What is blockchain technology and why might it be a catalyst for change for the financial sector?
    **My answer:** 
    The blockchain technology is a consensus protocol used to create an append-only log, being a transaction ledger that can them be used to form an auditable database:
@@ -83,7 +83,7 @@ I will answer the questions based on the lectures of this course.
 
   - **Reading**: [The Impact of Blockchain Technology on Finance: A Catalyst for Change](https://voxeu.org/system/files/epublication/Geneva21.pdf)
 
-  ### [Money, Ledgers & Bitcoin]()
+- ### [Money, Ledgers & Bitcoin](https://www.youtube.com/watch?v=5auv_xrvoJk&list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn&index=2&ab_channel=MITOpenCourseWareMITOpenCourseWare)
     - 1 - What do the roles (medium of exchange, store of value, & unit of account) and characteristics (durable, portable, divisible, uniform, acceptable & stable) of money mean historically and in today’s digital economy?
     **My answer:**
     - 2 - What is fiat currency, what are its ledgers, and how does it fit within the history of money?
