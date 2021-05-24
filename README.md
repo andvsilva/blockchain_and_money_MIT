@@ -22,7 +22,7 @@ Gary Gensler. 15.S12 Blockchain and Money. Fall 2018. Massachusetts Institute of
 ## Table of Contents
 
 - [Introduction]()
-Act 1: Blockchain and Money Fundamentals
+- Act 1: Blockchain and Money Fundamentals
 - [Money, Ledgers, and Bitcoin]()
 - [Blockchain Basics and Cryptography]()
 - [Blockchain Basics and Consensus]()
@@ -32,10 +32,10 @@ Act 1: Blockchain and Money Fundamentals
 - [Public Policy]()
 - [Permissioned Systems]()
 - [Financial System Challenges and Opportunities]()
-   Act 2: Blockchain and Use Case Economic
+- Act 2: Blockchain and Use Case Economic
 - [Blockchain Economics Guest Lecturer: Rob Gensler, Investor and Financial Analyst]()
 - [Assessing Use Cases]()
-  Act 3: Financial Sector Use Cases
+- Act 3: Financial Sector Use Cases
 - [Payments, Part 1 Guest Lecturer: Alin Dragos, MIT Digital Currency Initiatve]()
 - [Payments, Part 2]()
 - [Central Banks and Commercial Banking, Part 1 Guest Lecturer: Robleh Ali, MIT Digital Currency Initiative]()
