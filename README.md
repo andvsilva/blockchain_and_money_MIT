@@ -70,6 +70,15 @@ I will answer the questions based on the lectures of this course.
       - Addresses 'Cost of trust' (Byzantine Generals problem)
         - permissioned
         - permissionless (**BITCOIN AND ETHEREUM BLOCKCKAIN**)
+      - Distributed Consensus
   - 2 - What do you as a student wish to learn from this course, ‘Blockchain and Money’?
     **My answer:** 
     In this course I hope to learn blockchain technology and the money rules basics and how this will be inserted in the financial world to the future.
+
+   - #### [What is money?](https://www.bankofengland.co.uk/-/media/boe/files/speech/2018/the-future-of-money-speech-by-mark-carney.pdf?la=en&hash=A51E1C8E90BDD3D071A8D6B4F8C1566E7AC91418)
+        Adam Smith defines money by the roles it plays in society, in particular, how well it serves as:
+        - **A store of value** with which to transfer purchasing power from today to some future time;
+        - **A medium of exchange** with which to make payments for goods and services; and
+        - **A unit of account** with which to measure the value of a particular good, service, saving or loan.
+
+  - **Reading**: [The Impact of Blockchain Technology on Finance: A Catalyst for Change](https://voxeu.org/system/files/epublication/Geneva21.pdf)
