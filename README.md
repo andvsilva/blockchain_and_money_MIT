@@ -59,7 +59,7 @@ Here I will document the my study and reading about blockchain technology in thi
 ### Study questions:
 I will answer the questions based on the lectures of this course.
 
-- **Introduction**:
+- ### [Introduction]():
   - 1 - What is blockchain technology and why might it be a catalyst for change for the financial sector?
    **My answer:** 
    The blockchain technology is a consensus protocol used to create an append-only log, being a transaction ledger that can them be used to form an auditable database:
@@ -82,3 +82,11 @@ I will answer the questions based on the lectures of this course.
         - **A unit of account** with which to measure the value of a particular good, service, saving or loan.
 
   - **Reading**: [The Impact of Blockchain Technology on Finance: A Catalyst for Change](https://voxeu.org/system/files/epublication/Geneva21.pdf)
+
+  ### [Money, Ledgers & Bitcoin]()
+    - 1 - What do the roles (medium of exchange, store of value, & unit of account) and characteristics (durable, portable, divisible, uniform, acceptable & stable) of money mean historically and in today’s digital economy?
+    **My answer:**
+    - 2 - What is fiat currency, what are its ledgers, and how does it fit within the history of money?
+    **My answer:**
+    - 3 - How does Bitcoin fit within the history of money, the emergence of the Internet and failed attempts of cryptographic payment systems?
+    **My answer:**
