@@ -16,7 +16,9 @@ Fall 2018
 Graduate
 
 ```Bash
-Gary Gensler. 15.S12 Blockchain and Money. Fall 2018. Massachusetts Institute of Technology: MIT OpenCourseWare, https://ocw.mit.edu. License: Creative Commons BY-NC-SA.
+Gary Gensler. 15.S12 Blockchain and Money. Fall 2018
+Massachusetts Institute of Technology: MIT OpenCourseWare, 
+https://ocw.mit.edu. License: Creative Commons BY-NC-SA.
 ```
 
 Here I will document the my study and reading about blockchain technology in this course.
@@ -55,9 +57,19 @@ Here I will document the my study and reading about blockchain technology in thi
 ## [Reading](https://ocw.mit.edu/courses/sloan-school-of-management/15-s12-blockchain-and-money-fall-2018/readings/)
 
 ### Study questions:
+I will answer the questions based on the lectures of this course.
 
 - **Introduction**:
   - 1 - What is blockchain technology and why might it be a catalyst for change for the financial sector?
-
-
-  - 2 - What do you as a student wish to learn from this course, ‘Blockchain and Money’? 
+   **My answer:** 
+   The blockchain technology is a consensus protocol used to create an append-only log, being a transaction ledger that can them be used to form an auditable database:
+    - Secured via cryptography:
+      - hash functions for tamper resistance and integrity
+      - Digital signatures for consent
+      - Consensus for agreement
+      - Addresses 'Cost of trust' (Byzantine Generals problem)
+        - permissioned
+        - permissionless (**BITCOIN AND ETHEREUM BLOCKCKAIN**)
+  - 2 - What do you as a student wish to learn from this course, ‘Blockchain and Money’?
+    **My answer:** 
+    In this course I hope to learn blockchain technology and the money rules basics and how this will be inserted in the financial world to the future.
