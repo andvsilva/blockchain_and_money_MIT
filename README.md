@@ -94,3 +94,7 @@ I will answer the questions based on the lectures of this course.
     **My answer:** *fiat currency* is a currency used by nacional economies, that is not backed by a physical commodity like gold. *Ledger* is a book or collection of accounts in which account transactions are recorded, or is basically a way to record economic activity, social relationship or financial relationship. *fit within the history of money*: fit currency is a nature consequence that was born in the social economy relationship in the society, where the money is a social construct or social consensus mechanism.
     - 3 - How does Bitcoin fit within the history of money, the emergence of the Internet and failed attempts of cryptographic payment systems?
     **My answer:** The Bitcoin is a digital money or a peer-to-peer electronic cash system, being the first time in history of money was reproduced in a digital world, solving the classical problem in computer science, the 'double spending', by using the internet protocols and the cryptographic hash functions. This is a basically a payment system that allow to the participate to make ecomonic transactions that are record in one ledger, the blockchain, where we have the privacy and liberty garanted by the cryptographic. 
+
+    - **Reading**: 
+      - [A Brief History of Money](https://spectrum.ieee.org/at-work/innovation/a-brief-history-of-money)
+      - [A Brief History of Ledgers](https://medium.com/unraveling-the-ouroboros/a-brief-history-of-ledgers-b6ab84a7ff41)
