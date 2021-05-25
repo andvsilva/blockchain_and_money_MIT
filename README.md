@@ -95,6 +95,16 @@ I will answer the questions based on the lectures of this course.
     - 3 - How does Bitcoin fit within the history of money, the emergence of the Internet and failed attempts of cryptographic payment systems?
     **My answer:** The Bitcoin is a digital money or a peer-to-peer electronic cash system, being the first time in history of money was reproduced in a digital world, solving the classical problem in computer science, the 'double spending', by using the internet protocols and the cryptographic hash functions. This is a basically a payment system that allow to the participate to make ecomonic transactions that are record in one ledger, the blockchain, where we have the privacy and liberty garanted by the cryptographic. 
 
+      #### Good ledger:
+
+      - Immutable
+      - Consistency
+      - Timestamp
+      - Ownership
+      - Acurracy
+      - Description of the transaction
+      - Comprehensive
+
     - **Reading**: 
       - [A Brief History of Money](https://spectrum.ieee.org/at-work/innovation/a-brief-history-of-money)
       - [A Brief History of Ledgers](https://medium.com/unraveling-the-ouroboros/a-brief-history-of-ledgers-b6ab84a7ff41)
