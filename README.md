@@ -21,7 +21,8 @@ Massachusetts Institute of Technology: MIT OpenCourseWare,
 https://ocw.mit.edu. License: Creative Commons BY-NC-SA.
 ```
 
-Here I will document the my study and reading about blockchain technology in this course.
+Here I will document my studies and reading about blockchain technology in this course.
+I will answer the study questions for each lecture in the table of contents below.
 
 ## Table of Contents
 
@@ -57,7 +58,7 @@ Here I will document the my study and reading about blockchain technology in thi
 ## [Reading](https://ocw.mit.edu/courses/sloan-school-of-management/15-s12-blockchain-and-money-fall-2018/readings/)
 
 ### Study questions:
-I will answer the questions based on the lectures of this course.
+I will answer the questions based on the lectures of this course. 
 
 - ### [Introduction](https://www.youtube.com/watch?v=EH6vE97qIP4&list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn):
   - 1 - What is blockchain technology and why might it be a catalyst for change for the financial sector?
