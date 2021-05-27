@@ -55,6 +55,8 @@ I will answer the study questions for each lecture in the table of contents belo
 - [Second business write-up due by this class]()
 - [Conclusion]()
 
+#### Good resource: [Binance Academy - Blockchain & Crypto](https://academy.binance.com/en)
+
 ## [Reading](https://ocw.mit.edu/courses/sloan-school-of-management/15-s12-blockchain-and-money-fall-2018/readings/)
 
 ### Study questions:
@@ -62,19 +64,19 @@ I will answer the questions based on the lectures of this course.
 
 - ### [Introduction](https://www.youtube.com/watch?v=EH6vE97qIP4&list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn):
   - 1 - What is blockchain technology and why might it be a catalyst for change for the financial sector?
-   **My answer:** 
-   The blockchain technology is a consensus protocol used to create an append-only log, being a transaction ledger that can them be used to form an auditable database:
-    - Secured via cryptography:
-      - hash functions for tamper resistance and integrity
-      - Digital signatures for consent
-      - Consensus for agreement
-      - Addresses 'Cost of trust' (Byzantine Generals problem)
-        - permissioned
-        - permissionless (**BITCOIN AND ETHEREUM BLOCKCKAIN**)
-      - Distributed Consensus
+    - **My answer:** 
+    The blockchain technology is a consensus protocol used to create an append-only log, being a transaction ledger that can them be used to form an auditable database:
+      - Secured via cryptography:
+        - hash functions for tamper resistance and integrity
+        - Digital signatures for consent
+        - Consensus for agreement
+        - Addresses 'Cost of trust' (Byzantine Generals problem)
+          - permissioned
+          - permissionless (**BITCOIN AND ETHEREUM BLOCKCKAIN**)
+        - Distributed Consensus
   - 2 - What do you as a student wish to learn from this course, ‘Blockchain and Money’?
-    **My answer:** 
-    In this course I hope to learn blockchain technology and the money rules basics and how this will be inserted in the financial world to the future.
+    - **My answer:** 
+      In this course I hope to learn blockchain technology and the money rules basics and how this will be inserted in the financial world to the future.
 
    - #### [What is money?](https://www.bankofengland.co.uk/-/media/boe/files/speech/2018/the-future-of-money-speech-by-mark-carney.pdf?la=en&hash=A51E1C8E90BDD3D071A8D6B4F8C1566E7AC91418)
         Adam Smith defines money by the roles it plays in society, in particular, how well it serves as:
@@ -86,15 +88,18 @@ I will answer the questions based on the lectures of this course.
 
 - ### [Money, Ledgers & Bitcoin](https://www.youtube.com/watch?v=5auv_xrvoJk&list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn&index=2&ab_channel=MITOpenCourseWareMITOpenCourseWare)
     - 1 - What do the roles (medium of exchange, store of value, & unit of account) and characteristics (durable, portable, divisible, uniform, acceptable & stable) of money mean historically and in today’s digital economy?
-    **My answer:** The roles and characteristics of money are essencial to reach the 'sound money' whose
+      - **My answer:** 
+        - The roles and characteristics of money are essencial to reach the 'sound money' whose
     intrinsic value is determined by the laws of the markets, the supply and demand laws. The sound 
     money allow the individual freedom and prosperity to the society. Today the sound money in one global digital economy will change the way the society works, allowing more people to participate in the 
     financial world, thanks to the technology capable to reproduce the roles and caracteristics of the physical money in a digital world. 
 
     - 2 - What is fiat currency, what are its ledgers, and how does it fit within the history of money?
-    **My answer:** *fiat currency* is a currency used by nacional economies, that is not backed by a physical commodity like gold. *Ledger* is a book or collection of accounts in which account transactions are recorded, or is basically a way to record economic activity, social relationship or financial relationship. *fit within the history of money*: fit currency is a nature consequence that was born in the social economy relationship in the society, where the money is a social construct or social consensus mechanism.
+      - **My answer:** 
+        - *fiat currency* is a currency used by nacional economies, that is not backed by a physical commodity like gold. *Ledger* is a book or collection of accounts in which account transactions are recorded, or is basically a way to record economic activity, social relationship or financial relationship. *fit within the history of money*: fit currency is a nature consequence that was born in the social economy relationship in the society, where the money is a social construct or social consensus mechanism.
     - 3 - How does Bitcoin fit within the history of money, the emergence of the Internet and failed attempts of cryptographic payment systems?
-    **My answer:** The Bitcoin is a digital money or a peer-to-peer electronic cash system, being the first time in history of money was reproduced in a digital world, solving the classical problem in computer science, the 'double spending', by using the internet protocols and the cryptographic hash functions. This is a basically a payment system that allow to the participate to make ecomonic transactions that are record in one ledger, the blockchain, where we have the privacy and liberty garanted by the cryptographic. 
+      - **My answer:** 
+        - The Bitcoin is a digital money or a peer-to-peer electronic cash system, being the first time in history of money was reproduced in a digital world, solving the classical problem in computer science, the '[double spending](https://academy.binance.com/en/articles/double-spending-explained)', by using the internet protocols and the cryptographic hash functions. This is a basically a payment system that allow to the participate to make ecomonic transactions that are record in one ledger, the blockchain, where we have the privacy and liberty garanted by the cryptographic. 
 
       #### Good ledger:
 
@@ -117,3 +122,17 @@ I will answer the questions based on the lectures of this course.
     - **Reading**: 
       - [A Brief History of Money](https://spectrum.ieee.org/at-work/innovation/a-brief-history-of-money)
       - [A Brief History of Ledgers](https://medium.com/unraveling-the-ouroboros/a-brief-history-of-ledgers-b6ab84a7ff41)
+
+      #### Characteristics of Money
+      - Durable
+      - Portable
+      - Divisible
+      - Uniform/Fungible
+
+- #### [Blockchain Basics & Cryptography](https://www.youtube.com/watch?v=0UvVOMZqpEA&t=2s&ab_channel=MITOpenCourseWare)
+  - 1 - What are the design features—cryptography, append-only timestamped blocks, distributed consensus algorithms, and networking—of Bitcoin, the first use case for blockchain technology? 
+    - **My answer:**
+  - 2 - What are cryptographic hash functions, asymmetric cryptography and digital signatures? How are they utilized to help make blockchain technology verifiable and immutable?
+    - **My answer:**
+  - 3 - What is the double-spending problem and how it is addressed by blockchain technology?
+    - **My answer:**
