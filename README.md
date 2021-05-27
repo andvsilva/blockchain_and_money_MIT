@@ -143,8 +143,9 @@ I will answer the questions based on the lectures of this course.
     - Transaction Inputs & Outputs
     - Unspent Transaction Output(UTXO)
     - Scripting Language
-  - 1 - What are the design features—cryptography, append-only timestamped blocks, distributed consensus algorithms, and networking—of Bitcoin, the first use case for blockchain technology? 
+  - 1 - What are the design features — cryptography, append-only timestamped blocks, distributed consensus algorithms, and networking—of Bitcoin, the first use case for blockchain technology? 
     - **My answer:**
+        - *cryptography*: is methods and techniques to provide secure and protect information, in *append-only timestamped blocks* is a chain of block of data that are store in immutable way in time, using the concept called *distributed consensus algorithms*, where we do not have a central authority in the *networking*, where nobody has a control, but all the participants follow the protocol, the Bitcoin is a the first time in history that the blockchain technology are used to make money programming.
   - 2 - What are cryptographic hash functions, asymmetric cryptography and digital signatures? How are they utilized to help make blockchain technology verifiable and immutable?
     - **My answer:**
   - 3 - What is the double-spending problem and how it is addressed by blockchain technology?
