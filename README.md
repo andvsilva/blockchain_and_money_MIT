@@ -130,6 +130,19 @@ I will answer the questions based on the lectures of this course.
       - Uniform/Fungible
 
 - #### [Blockchain Basics & Cryptography](https://www.youtube.com/watch?v=0UvVOMZqpEA&t=2s&ab_channel=MITOpenCourseWare)
+
+  - [Bitcoin - Technical Features](https://bitcoin.org/en/how-it-works)
+    - Cryptographic Hash Functions
+    - Timestamped Append-only Logs(Blocks)
+    - Block Headers & Merkle Trees
+    - Asymmetric Cryptography & Digital signatures
+    - Addresses
+    - Consensus through Proof-of-Work (PoW)
+    - Network of Nodes
+    - Native Currency (**Technological design feature that is part of the economic incentive**, Bitcoin mining)
+    - Transaction Inputs & Outputs
+    - Unspent Transaction Output(UTXO)
+    - Scripting Language
   - 1 - What are the design features—cryptography, append-only timestamped blocks, distributed consensus algorithms, and networking—of Bitcoin, the first use case for blockchain technology? 
     - **My answer:**
   - 2 - What are cryptographic hash functions, asymmetric cryptography and digital signatures? How are they utilized to help make blockchain technology verifiable and immutable?
