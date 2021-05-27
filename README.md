@@ -105,6 +105,14 @@ I will answer the questions based on the lectures of this course.
       - Description of the transaction
       - Comprehensive
 
+      #### Fiat Currency
+
+      - Social & Economic consensus.
+      - Represented by central bank liabilities & commercial bank deposits.
+      - Relies upon system of ledgerss integrated into fractional banking system.
+      - Accepted for taxes.
+      - Notes & Coins are legal tender for all debts public & privace.
+
     - **Reading**: 
       - [A Brief History of Money](https://spectrum.ieee.org/at-work/innovation/a-brief-history-of-money)
       - [A Brief History of Ledgers](https://medium.com/unraveling-the-ouroboros/a-brief-history-of-ledgers-b6ab84a7ff41)
