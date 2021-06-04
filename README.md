@@ -152,3 +152,11 @@ I will answer the questions based on the lectures of this course.
         a fixed-size output of enciphered text called a hash value, or just 'hash'. *asymmetric cryptography and digital signatures* is a way to encrypt a message to protect the information send through the internet, and only the people with the digital signatures can access the information encrypted. The blockchain technology is formated by the design features, where we have a ledger that record the economic transactions between the participants, and the data for each block of transactions are hashed with the timestamp and pratically infeasible to change (immutable), for one transaction we have the asymmetric cryptographic between parties, where one party use your digital signature to sign the transaction with your private key to another party (public key), and only this party with the private key link cryptographic to this public key will have access to the Bitcoin. This ledger (history of all transactions) is public and everyone can verify the authenticity of the transaction.
   - 3 - What is the double-spending problem and how it is addressed by blockchain technology?
     - **My answer:** Double-spending is a problem that arise in the beginning of the creation of the digital money, because the digital token can be spent more than once. For the first time this problem was solved by Satoshi Nakamoto with the creation of the *Bitcoin* using the blockchain technology.
+
+- #### [Blockchain Basics and Consensus](https://www.youtube.com/watch?v=w7HDA8gUbpQ&t=7s)
+  - 1 - What is the Byzantine Generals problem? How does proof-of-work and mining in Bitcoin address it? More generally by blockchain technology?
+    - **My answer:**
+  - 2 - What other consensus protocols are there? What are some of the tradeoffs of alternative consensus algorithms, proof-of-work, proof-of-stake, etc.?
+    - **My answer:**
+  - 3 - How does Bitcoin record transactions? What is unspent transaction output (UTXO)?  What is script code embedded in each Bitcoin transaction and how flexible aprogramming language is it?
+    - **My answer:**
