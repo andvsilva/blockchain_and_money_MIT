@@ -141,7 +141,7 @@ I will answer the questions based on the lectures of this course.
     - Decentralized Network Consensus
       - Consensus through Proof-of-Work (PoW)
       - Network of Nodes
-      - Native Currency (**Technological design feature that is part of the economic incentive**, Bitcoin mining)
+      - Native Currency (**Technological design feature that is part of the economic incentive system**, Bitcoin mining)
     - Transactions Script & UTXO
       - Transaction Inputs & Outputs
       - Unspent Transaction Output(UTXO)
@@ -215,11 +215,48 @@ I will answer the questions based on the lectures of this course.
    'Blockchain - Consensus supports longest Chain'
   ```
 
+  **Bitcoin Mining Evolution**
+
+  ```bash
+  - Central Processing Units (CPUs) 2009-2010 >>> 2 - 20 MH/s
+  - Graphics Processing Units (GPUs) 2010-2013 >>> 20-300 MH/s
+  - Application Specific Integrated Circuit (ASICs) >>> 2013-2018 4 - 16 TH/s
+  ```
+
+  **Proof-of-Stack - Consensus Mechanism**
+
+  ```bash
+  # Alternative Consensus Protocols
+  - Generally Randomized of Delegated Selection of Nodes to Validate next Block
+  - May have added mechanism to confirm Block Validators Work
+  - Proof of Stake (PoS) - Stake in Native Currency
+  - Proof of Activity - Hydrid of PoW and PoS
+  - Proof of Burn - Validation comes with Burning of Coins 
+  - Proof of Capacity (storage or Space) - Based upon Hardware Space
+
+  Delefated selection May be based upon tiered System of Nodes
+
+  Major Permissionless Blockchain Applications still use Proof-of-Work
+  ```
+
+  **Network**
+
+  ```bash
+  - 'Full Nodes' - Store full blockchain & able to validate all transactions
+  - 'Pruning Nodes' - Prune transactions after validation and aging
+  - 'Lightweight Nodes' - Simplified Payment Verification (SPV) nodes - Stores Blockchain Headers only
+  - 'Miners' - Performs Proof of Work & Create new Blocks - Do not need to be a Full Node
+  - 'Mining Pool Operators'
+  - 'Wallets' - Store, View, Send and Receive Transactions & Create Key Pairs.
+  - 'Mempool' - Store of unconfirmed (yet validated) Transactions 
+  ```
+
+
   - 1 - What is the Byzantine Generals problem? How does proof-of-work and mining in Bitcoin address it? More generally by blockchain technology?
     - **My answer:** Byzantine Generals problem arise in a group of generals, in command of a division of the Bizantine army, where the generals must decide whether to attack the city or retreat. Some generals can act as traitors being in disagreement with the others generals that have the intention to attack together to avoid losses. The communication between the generals by messenger to reach agreement on a strategy, maybe the message can be delayed or disappear. This problem describes nicely the ***distribuited consensus problem***, the generals are the computers and the traitors are faulty computers, the messengers are data being sent over an unrealiable network. In a blockchain network, this problem is solve by the consensus algorithm used to agree on the ledger in Satoshi's Bitcoin is based on participants competing to win rewards denominated in bitcoin. Its breakthrough feature is a ```proof-of-work``` function, which imposes computation costs on each participant in the competition. The participants who engage in this proces are called **miners**. In essence, each miner collects a set of outstanding transactions, referred to as a ```block```, while simultaneoously competing to find a randomly chosen string of numbers and letters. Once a miner finds the required string, they broadcast it, along with block, to the rest of the network and claim their reward, comprising a combination of freshly issued bitcoins and any fees that users have attached to transactions in the block. The competition for the next block begins, building on the chain of blocks that have come before. This is why the transaction ledger is known as a **blockchain**. Another important feature is that the bitcoin protocol includes an algorithm that automatically adjusts the difficulty of completing the next block as the overall processing power of the computing network changes. As more miners join the network, the difficulty of the cryptographic challenge rises, and as miners leave it becomes easier to solve.
 
   - 2 - What other consensus protocols are there? What are some of the tradeoffs of alternative consensus algorithms, proof-of-work, proof-of-stake, etc.?
-    - **My answer:**
+    - **My answer:** Yes, there are others consensus protocols with different approaches, like ```proof-of-stack, proof of activity, proof of burn and proof of capacity```. There are a big differences between proof-of-work (PoW) and proof-of stack (PoS), because the PoW is important to provide a cryptography security and privacy to participants in the blockchain, e.g. the Bitcoin, but for this consensus protocol is necessary to invest a lot money in computing power and electricity to mining, the blocks, where for design we have in principle a decentralized network that is the core fundamental written by Satoshi Nakamoto in the whitepaper, and by the way, this fundamental does not change over the year and this make the true value of the BTC, the underlying blockchain technology. In the other hand, the PoS, the approach is different, the tradeoff now is not necessary computing power and a high energy supply to the protocol, i.e., the participants stack your coins and get a reward proporcional to the quantity of coins locked in the protocol, in this network we have a more centralized environment, that is not good in provide a security and privacy, like the PoW, because now we have a point of failure.
 
   - 3 - How does Bitcoin record transactions? What is unspent transaction output (UTXO)?  What is script code embedded in each Bitcoin transaction and how flexible a programming language is it?
     - **My answer:**
