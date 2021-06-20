@@ -132,17 +132,20 @@ I will answer the questions based on the lectures of this course.
 - #### [Blockchain Basics & Cryptography](https://www.youtube.com/watch?v=0UvVOMZqpEA&t=2s&ab_channel=MITOpenCourseWare)
 
   - [Bitcoin - Technical Features](https://bitcoin.org/en/how-it-works)
-    - Cryptographic Hash Functions
-    - Timestamped Append-only Logs(Blocks)
-    - Block Headers & Merkle Trees
-    - Asymmetric Cryptography & Digital signatures
-    - Addresses
-    - Consensus through Proof-of-Work (PoW)
-    - Network of Nodes
-    - Native Currency (**Technological design feature that is part of the economic incentive**, Bitcoin mining)
-    - Transaction Inputs & Outputs
-    - Unspent Transaction Output(UTXO)
-    - Scripting Language
+    - Cryptography & Timestamped logs
+      - Cryptographic Hash Functions
+      - Timestamped Append-only Logs(Blocks) (immutable digital ledger, distributed)
+      - Block Headers & Merkle Trees
+      - Asymmetric Cryptography & Digital signatures
+      - Addresses
+    - Decentralized Network Consensus
+      - Consensus through Proof-of-Work (PoW)
+      - Network of Nodes
+      - Native Currency (**Technological design feature that is part of the economic incentive**, Bitcoin mining)
+    - Transactions Script & UTXO
+      - Transaction Inputs & Outputs
+      - Unspent Transaction Output(UTXO)
+      - Scripting Language
   - 1 - What are the design features — cryptography, append-only timestamped blocks, distributed consensus algorithms, and networking—of Bitcoin, the first use case for blockchain technology? 
     - **My answer:**
         - *cryptography* is methods and techniques to provide secure and protect information, in *append-only timestamped blocks* is a chain of block of data that are store in immutable way in time, using the concept called *distributed consensus algorithms*, where we do not have a central authority in the *networking*, where nobody has a control, but all the participants follow the protocol, the Bitcoin is a the first time in history that the blockchain technology are used to make money programming.
@@ -154,9 +157,70 @@ I will answer the questions based on the lectures of this course.
     - **My answer:** Double-spending is a problem that arise in the beginning of the creation of the digital money, because the digital token can be spent more than once. For the first time this problem was solved by Satoshi Nakamoto with the creation of the *Bitcoin* using the blockchain technology.
 
 - #### [Blockchain Basics and Consensus](https://www.youtube.com/watch?v=w7HDA8gUbpQ&t=7s)
+
+  ```bash
+  Blockchain - Proof-of-Work (PoW)
+
+  Innovation -- Chained proof of Work for Distribuited Network Consensus 
+                & Timestamping
+
+  ################################################################
+  Block:
+    - Previous Hash
+    - Nonce
+    Database:
+      -------------------------------
+      - Transactions (Tx)
+      - ...
+      -------------------------------
+  
+      Hash Function:
+                       Known                  Known           Known     Unknown   
+       SHA256( Hash of previous block + Transactions hash + Timestamp + Nonce)
+
+       Output:
+       ---> 0000.................................
+     'Difficulty (zeros in the beginning of the hash)'
+
+     Pow Difficulty
+     - Targets 10 minutes average block generation time
+     - Defined by the hashtag of leading zeros hash output
+       requires to solve PoW
+     - Adjusts every 2016 blocks - about every two weeks
+
+
+     Genesis Block:
+     Hash
+      The hash of the genesis block: 2021-01-03
+      000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f 
+      
+      has two more leading hex zeroes than were required for an early block.
+
+      ## https://www.blockchain.com/btc/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f
+
+
+      Hash: 00000000000000000008ee81042efa8e314ab763e386d182b35e218d771d0260
+      Confirmations: 1
+      Timestamp: 2021-06-20 11:01
+      Height: 688289
+      Miner: ViaBTC
+      Number of Transactions: 1,077
+      Difficulty: 19,932,791,027,262.74
+      Merkle root: b4ba6ed057353bd444012b9262f1ccb39c782052e56a71c7677a2e905813eafc
+
+  #########################################################################
+
+  ```
+  ```bash
+   'Blockchain - Consensus supports longest Chain'
+  ```
+
   - 1 - What is the Byzantine Generals problem? How does proof-of-work and mining in Bitcoin address it? More generally by blockchain technology?
     - **My answer:** Byzantine Generals problem arise in a group of generals, in command of a division of the Bizantine army, where the generals must decide whether to attack the city or retreat. Some generals can act as traitors being in disagreement with the others generals that have the intention to attack together to avoid losses. The communication between the generals by messenger to reach agreement on a strategy, maybe the message can be delayed or disappear. This problem describes nicely the ***distribuited consensus problem***, the generals are the computers and the traitors are faulty computers, the messengers are data being sent over an unrealiable network. In a blockchain network, this problem is solve by the consensus algorithm used to agree on the ledger in Satoshi's Bitcoin is based on participants competing to win rewards denominated in bitcoin. Its breakthrough feature is a ```proof-of-work``` function, which imposes computation costs on each participant in the competition. The participants who engage in this proces are called **miners**. In essence, each miner collects a set of outstanding transactions, referred to as a ```block```, while simultaneoously competing to find a randomly chosen string of numbers and letters. Once a miner finds the required string, they broadcast it, along with block, to the rest of the network and claim their reward, comprising a combination of freshly issued bitcoins and any fees that users have attached to transactions in the block. The competition for the next block begins, building on the chain of blocks that have come before. This is why the transaction ledger is known as a **blockchain**. Another important feature is that the bitcoin protocol includes an algorithm that automatically adjusts the difficulty of completing the next block as the overall processing power of the computing network changes. As more miners join the network, the difficulty of the cryptographic challenge rises, and as miners leave it becomes easier to solve.
+
   - 2 - What other consensus protocols are there? What are some of the tradeoffs of alternative consensus algorithms, proof-of-work, proof-of-stake, etc.?
     - **My answer:**
-  - 3 - How does Bitcoin record transactions? What is unspent transaction output (UTXO)?  What is script code embedded in each Bitcoin transaction and how flexible aprogramming language is it?
+
+  - 3 - How does Bitcoin record transactions? What is unspent transaction output (UTXO)?  What is script code embedded in each Bitcoin transaction and how flexible a programming language is it?
     - **My answer:**
+
