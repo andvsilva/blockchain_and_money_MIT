@@ -29,9 +29,9 @@ I will answer the study questions for each lecture in the table of contents belo
 - [Introduction](https://www.youtube.com/watch?v=EH6vE97qIP4&list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn)
 - Act 1: Blockchain and Money Fundamentals
 - [Money, Ledgers, and Bitcoin](https://www.youtube.com/watch?v=5auv_xrvoJk&list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn&index=2&ab_channel=MITOpenCourseWareMITOpenCourseWare)
-- [Blockchain Basics and Cryptography]()
-- [Blockchain Basics and Consensus]()
-- [Blockchain Basics and Transactions, UTXO, and Script Code]()
+- [Blockchain Basics and Cryptography](https://www.youtube.com/watch?v=0UvVOMZqpEA&t=1s&ab_channel=MITOpenCourseWareMITOpenCourseWare)
+- [Blockchain Basics and Consensus](https://www.youtube.com/watch?v=w7HDA8gUbpQ&ab_channel=MITOpenCourseWare)
+- [Blockchain Basics and Transactions, UTXO, and Script Code](https://www.youtube.com/watch?v=zGDTt9Q3vyM&ab_channel=MITOpenCourseWare)
 - [Smart Contracts and DApps Guest Lecturer : Prof. Lawrence Lessig, Harvard Law School]()
 - [Technical Challenges]()
 - [Public Policy]()
@@ -256,8 +256,70 @@ I will answer the questions based on the lectures of this course.
     - **My answer:** Byzantine Generals problem arise in a group of generals, in command of a division of the Bizantine army, where the generals must decide whether to attack the city or retreat. Some generals can act as traitors being in disagreement with the others generals that have the intention to attack together to avoid losses. The communication between the generals by messenger to reach agreement on a strategy, maybe the message can be delayed or disappear. This problem describes nicely the ***distribuited consensus problem***, the generals are the computers and the traitors are faulty computers, the messengers are data being sent over an unrealiable network. In a blockchain network, this problem is solve by the consensus algorithm used to agree on the ledger in Satoshi's Bitcoin is based on participants competing to win rewards denominated in bitcoin. Its breakthrough feature is a ```proof-of-work``` function, which imposes computation costs on each participant in the competition. The participants who engage in this proces are called **miners**. In essence, each miner collects a set of outstanding transactions, referred to as a ```block```, while simultaneoously competing to find a randomly chosen string of numbers and letters. Once a miner finds the required string, they broadcast it, along with block, to the rest of the network and claim their reward, comprising a combination of freshly issued bitcoins and any fees that users have attached to transactions in the block. The competition for the next block begins, building on the chain of blocks that have come before. This is why the transaction ledger is known as a **blockchain**. Another important feature is that the bitcoin protocol includes an algorithm that automatically adjusts the difficulty of completing the next block as the overall processing power of the computing network changes. As more miners join the network, the difficulty of the cryptographic challenge rises, and as miners leave it becomes easier to solve.
 
   - 2 - What other consensus protocols are there? What are some of the tradeoffs of alternative consensus algorithms, proof-of-work, proof-of-stake, etc.?
-    - **My answer:** Yes, there are others consensus protocols with different approaches, like ```proof-of-stack, proof of activity, proof of burn and proof of capacity```. There are a big differences between proof-of-work (PoW) and proof-of stack (PoS), because the PoW is important to provide a cryptography security and privacy to participants in the blockchain, e.g. the Bitcoin, but for this consensus protocol is necessary to invest a lot money in computing power and electricity to mining, the blocks, where for design we have in principle a decentralized network that is the core fundamental written by Satoshi Nakamoto in the whitepaper, and by the way, this fundamental does not change over the year and this make the true value of the BTC, the underlying blockchain technology. In the other hand, the PoS, the approach is different, the tradeoff now is not necessary computing power and a high energy supply to the protocol, i.e., the participants stack your coins and get a reward proporcional to the quantity of coins locked in the protocol, in this network we have a more centralized environment, that is not good in provide a security and privacy, like the PoW, because now we have a point of failure.
+    - **My answer:** Yes, there are others consensus protocols with different approaches, like ```proof-of-stack, proof of activity, proof of burn and proof of capacity```. There are a big differences between proof-of-work (PoW) and proof-of stack (PoS), because the PoW is important to provide a cryptography security and privacy to participants in the blockchain, e.g. the Bitcoin, but for this consensus protocol is necessary to invest a lot of money in computing power and electricity to mining, the blocks, where for design we have in principle a decentralized network that is the core fundamental written by Satoshi Nakamoto in the whitepaper, and by the way, this fundamental does not change over the 10 years and this make the "true value" of the BTC, the underlying blockchain technology. In the other hand, the PoS, the approach is different, the tradeoff now is not necessary computing power and a high energy supply to the protocol, i.e., the participants stack your coins and get a reward proporcional to the quantity of coins locked in the protocol, in this network we have a more centralized environment, that is not good in provide a security and privacy, like the PoW, because now we have a point of failure.
 
   - 3 - How does Bitcoin record transactions? What is unspent transaction output (UTXO)?  What is script code embedded in each Bitcoin transaction and how flexible a programming language is it?
     - **My answer:**
 
+ - #### [Blockchain Basics and Transactions, UTXO, and Script Code](https://www.youtube.com/watch?v=zGDTt9Q3vyM&ab_channel=MITOpenCourseWare)
+ 
+```bash
+                       Transaction Format 
+
+-------------------------------------------------------------|
+|Input                           |  Output                   |
+|                                |                           |
+|Previous transaction ID         |  Value                    |
+|Index                           |  Public Key               |
+|Signature                       |  (Bitcoin Address)        |
+--------------------------------------------------------------
+|                      lock_time                             |
+--------------------------------------------------------------
+
+Previous transaction ID, Index, Signature -- Uniquely identifies an output
+
+One satoshi 10^8 = 1 Bitcoin (BTC)
+
+Coinbase Transaction
+
+Reward for solving Proof-of-Work
+- Only Input is the coinbase block reward
+- Reward halves(1/2s) every 210,000 blocks
+    - Originally 50 Bitcoins per block
+    - 1º Halving (28 November 2012): 25 Bitcoins (50 % Mined)
+    - 2º Halving (9 July 2016): 12.5 Bitcoins (75 % Mined)
+    - 3º Halving (11 May 2020): 6.25 Bitcoins (87.5 % Mined)
+    - 4º Halving (Expected 2024): 3,125 Bitcoins (96.875 % Mined)
+    - 5º Halving (Expected 2028): 1.5625 Bitcoins (98.4375 %)
+    - 6º Halving (Expected 2032	): 0.78125 Bitcoins (99.21875)
+- Output may not be used as a transaction input until another 100 Blocks 
+- Recorded as First Transaction in Merkle Tree
+- May Include 100 Bytes of arbitrary data
+    - Used for additional Nonce
+    - Genesis Block included Headline from Financial Times:
+        - 'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
+```
+
+#### Unspent Transaction Output (UTXO) Set
+
+- Bitcoin transaction outputs that have not been spent at a given time
+    - Contains All currently Unspent transaction Outputs
+    - Speeds up Transactions validation Process
+    - Stored using a LevelDB database in Bitcoin Core called ´chainstate´
+
+```bash
+Bitcoin Script
+    - Programming Code used for Transactions
+  - Stack-based codem, with no loops (turning-complete)
+  - Provides a Flexible Set of Instructions for Transanctions validation and Signature Authentication
+```
+
+
+
+- 1. As many design features—public key cryptography, hash functions, append-only timestamped logs, digital cash, and proof-of-work—pre-date Bitcoin, what was the novel innovation of Santoshi Nakamoto?
+        - **My answer:**
+- 2. How do economic incentives work within blockchain technology to maintain decentralized ledgers and avoid double spending? What are the incentives of consensus protocols and mining?
+      - **My answer:**
+  
+- 3. Who is Satoshi Nakamoto? (Only kidding a bit.)
+        - **My answer:**
