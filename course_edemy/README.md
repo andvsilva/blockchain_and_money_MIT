@@ -1,6 +1,6 @@
 # Blockchain A-Z: learn to Build your own Blockchain
 
-## Table of Content
+## Table of Contents
 
 ### Blockchain intuition
 - What is a blockchain?
