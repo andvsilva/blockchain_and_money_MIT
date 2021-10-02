@@ -63,6 +63,11 @@ I will answer the study questions for each lecture in the table of contents belo
 I will answer the questions based on the lectures of this course. 
 
 - ### [Introduction](https://www.youtube.com/watch?v=EH6vE97qIP4&list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn):
+  - How to move value peer-to-peer without any trusted central intermediary?
+    - **Answer**: Bitcoin: A Peer-to-Peer Electronic cash System.
+      - ```bash
+        "I've been working on a new eletronic cash system that's fully peer-to-peer, with no trusted third party." Satoshi Nakamoto
+        ```
   - 1 - What is blockchain technology and why might it be a catalyst for change for the financial sector?
     - **My answer:** 
     The blockchain technology is a consensus protocol used to create an append-only log, being a transaction ledger that can them be used to form an auditable database:
