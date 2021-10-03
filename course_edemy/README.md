@@ -93,7 +93,6 @@ $ python blockchain.py
  * Running on http://XXXXXXXXX:5000/ (Press CTRL+C to quit)
 XXXXXXXXX - - [03/Oct/2021 12:05:48] "GET /get_chain HTTP/1.1" 200 -
 XXXXXXXXX - - [03/Oct/2021 12:17:59] "GET /mine_block HTTP/1.1" 200 -
-XXXXXXXXX - - [03/Oct/2021 12:21:17] "GET /get_main HTTP/1.1" 404 -
 XXXXXXXXX - - [03/Oct/2021 12:21:26] "GET /get_chain HTTP/1.1" 200 -
 XXXXXXXXX - - [03/Oct/2021 12:22:18] "GET /mine_block HTTP/1.1" 200 -
 XXXXXXXXX - - [03/Oct/2021 12:22:22] "GET /mine_block HTTP/1.1" 200 -
@@ -148,6 +147,48 @@ XXXXXXXXX - - [03/Oct/2021 12:22:41] "GET /get_chain HTTP/1.1" 200 -
 }
 ```
 
+### Welcome to Part 2 - Cryptocurrency
+### Welcome to Part 2!
+
+In this Part you will:
+
+Build up a solid Cryptocurrency Intuition
+Reinforce this Intuition by understanding in depth Cryptocurrencies transactions
+
+Learn how to create a Cryptocurrency from scratch
+Enjoy!
+
+### Cryptocurrency intuition
+
+- What is Bitcoin?
+- Bitcoin's Monetary Policy
+- Understanding Mining Difficulty
+- Virtual tour of a Bitcoin Mine
+- Mining Pools
+- Nonce Range
+- How Miner Pick Transactions (Part 1)
+- How Miner Pick Transactions (Part 2)
+- CPU's vs GPU's vs ASIC's
+- How do Menpools?
+- Orphaned Blocks
+- The 51% Attack
+- Extra: Bits to Target conversion
+- Quiz 2: Cryptocurrency intuition
+
+### Quiz:
+
+- In which order (from top to bottom) do the three layers of Blockchain go?
+  - [x] 1 - Technology(Blockchain), 
+  - [x] 2 - Protocol/Coin (e.g. Bitcoin, Ethereum) and 
+  - [x] 3 - Token (e.g. Power Ledger).
+- What is the maximum number of Bitcoins that will ever be in circulation and when will this happen?
+  - [x] 21 Million Bitcoins by 2140.
+- Assuming that the current mining difficulty requires 18 leading zeros for a hash to be vaild, what is the probability that a hash selected at random will be valid?
+  - [x] 0.00000000000000000002%
+- What is a Mempool?
+  - [x] A Mempool is a storage area where transactions are stored before they are added to a block. Every participant of the P2P distributed network has their own menpool on their computer.
+- What is the 51% attack and how do the attackers benefit from it?
+  - [x] The 51% attack is when a group of hidden participants with majority computational power conduct mining without announcing their version of the chain to the rest of the network. The attackers can benefit by leveraging the double-spend problem.
 #### Resources
 
 - [The Meaning of Decentralization](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274)
