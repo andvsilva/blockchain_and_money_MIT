@@ -52,6 +52,8 @@ through real life examples! Master Blockchain Now!
   - [x] Mining is all about finding a ```Nonce``` value which willl generate a Hash value below a certain target threshold set by the bitcoin network.
 - What is a Consensus Protocol?
   - [x] A Consensus Protocol is a process used process to achieve agreement between participants of a distributed network.
+
+### Create a Blockchain
 #### Resources
 
 - [The Meaning of Decentralization](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274)
