@@ -189,6 +189,35 @@ Enjoy!
   - [x] A Mempool is a storage area where transactions are stored before they are added to a block. Every participant of the P2P distributed network has their own menpool on their computer.
 - What is the 51% attack and how do the attackers benefit from it?
   - [x] The 51% attack is when a group of hidden participants with majority computational power conduct mining without announcing their version of the chain to the rest of the network. The attackers can benefit by leveraging the double-spend problem.
+
+### Cryptocurrency Transactions Intuition
+
+- Transactions and UTXO'S
+- Where do transaction fees come from?
+- How wallets work
+- Signatures: Private & Public Keys
+- Signatures & Keys Demo
+- What is Segregated Witness (SegWit)
+- Public Key and Bitcoin Address
+- Hierarchically Deterministic (HD) Wallets
+- Quiz 3: Cryptocurrency Transactions Intuition
+
+### Quiz:
+
+- What does the acronym UTXO stand for?
+  - [x] Unspent Transaction Output
+- Which of the following describes the difference between how transactions work in traditional banking sense and on a blockchain?
+  - [x] Bank - there is concept of 'balance'. Transactions add or take away from that balance.
+  - [x] Blockchain - each transaction has a life of it's own and has to start from another transaction(s) and end into other transaction(s).
+  - [x] blockchain - there is no concept of 'balance'. What a cryptocurrency wallet demonstrates is simply an aggregation of all of the transactions which exist on the blockchain and include you as either a sender of receipent.
+- Where do transaction fees come from?
+  - [x] Fees constitute the difference between a transaction inputs and Outputs. Anything that is unused is given to the miner and that's how you can choose what fee you want to pay.
+- Which of the following is not required by the Verification Function in order to verify the validity of a message (or transaction)?
+  - [x] Private Key.
+- What is the difference between a Public Key and an Address?
+  - [x] These are almost the same. The Address is the SHA256 encrypted version of the public. This is done for additional security in case the elliptic curve is hacked.
 #### Resources
 
 - [The Meaning of Decentralization](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274)
+- [DETERMINISTIC WALLETS, THEIR ADVANTAGES AND THEIR UNDERSTATED FLAWS
+](https://bitcoinmagazine.com/technical/deterministic-wallets-advantages-flaw-1385450276)
