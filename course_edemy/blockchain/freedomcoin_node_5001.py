@@ -22,7 +22,7 @@ class Blockchain:
         self.chain = []
         self.transactions = []
         self.create_block(proof = 1, previous_hash = '0')
-        self.nodes = []
+        self.nodes = set()
     
     def create_block(self, proof, previous_hash):
         block = {'index': len(self.chain) + 1,
@@ -77,7 +77,7 @@ class Blockchain:
     
     def add_node(self, address):
         parsed_url = urlparse(address)
-        self.nodes.append(parsed_url.netloc)
+        self.nodes.add(parsed_url.path) # change netloc to path
     
     def replace_chain(self):
         network = self.nodes
@@ -115,7 +115,7 @@ def mine_block():
     previous_proof = previous_block['proof']
     proof = blockchain.proof_of_work(previous_proof)
     previous_hash = blockchain.hash(previous_block)
-    blockchain.add_transaction(sender = node_address, receiver = 'andvsilva', amount = 1)
+    blockchain.add_transaction(sender = node_address, receiver = 'Hadelin', amount = 1)
     block = blockchain.create_block(proof, previous_hash)
     response = {'message': 'Congratulations, you just mined a block!',
                 'index': block['index'],
@@ -162,12 +162,11 @@ def connect_node():
     nodes = json.get('nodes')
     if nodes is None:
         return "No node", 400
-
     for node in nodes:
         blockchain.add_node(node)
-    
+        
     response = {'message': 'All the nodes are now connected. The Hadcoin Blockchain now contains the following nodes:',
-                'total_nodes': blockchain.nodes}
+                'total_nodes': list(blockchain.nodes)}
     return jsonify(response), 201
 
 # Replacing the chain by the longest chain if needed

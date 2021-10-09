@@ -77,7 +77,7 @@ class Blockchain:
     
     def add_node(self, address):
         parsed_url = urlparse(address)
-        self.nodes.add(parsed_url.netloc)
+        self.nodes.add(parsed_url.path) # change netloc to path
     
     def replace_chain(self):
         network = self.nodes
@@ -115,7 +115,7 @@ def mine_block():
     previous_proof = previous_block['proof']
     proof = blockchain.proof_of_work(previous_proof)
     previous_hash = blockchain.hash(previous_block)
-    blockchain.add_transaction(sender = node_address, receiver = 'andrew', amount = 1)
+    blockchain.add_transaction(sender = node_address, receiver = 'Kirill', amount = 1)
     block = blockchain.create_block(proof, previous_hash)
     response = {'message': 'Congratulations, you just mined a block!',
                 'index': block['index'],
