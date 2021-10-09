@@ -216,6 +216,12 @@ Enjoy!
   - [x] Private Key.
 - What is the difference between a Public Key and an Address?
   - [x] These are almost the same. The Address is the SHA256 encrypted version of the public. This is done for additional security in case the elliptic curve is hacked.
+
+
+### Create Cryptocurrency
+
+See the source code in python:
+  - [x] [freedomcoin.py](/course_edemy/blockchain/freedomcoin.py)
 #### Resources
 
 - [The Meaning of Decentralization](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274)
