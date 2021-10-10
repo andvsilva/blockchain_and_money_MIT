@@ -222,8 +222,34 @@ Enjoy!
 
 See the source code in python:
   - [x] [freedomcoin.py](/course_edemy/blockchain/freedomcoin.py)
+
+### Smart Contract Intuition
+
+```bash
+Definition - Smart Contract:
+
+- "A set of promises,
+- Specified in Digital Form,
+- including protocols,
+- within which the parties perform on these promises" Nick Szabo, 1996.
+```
+
+
+- What is Ethereum?
+- What is a Smart Contract
+- Decentralized Applications (DApps)
+- Ethereum Virtual Machine & Gas
+- Decentralized Autonomous Organizations (DAO)
+- The DAO attack
+- Soft and Hard Forks (Part 1)
+- Initial Coin Offerings (ICOs)
+- ICO Case Study 
+- Blockchain and Web 3.0
+- Quiz: Smart Contract intuition 
 #### Resources
 
 - [The Meaning of Decentralization](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274)
 - [DETERMINISTIC WALLETS, THEIR ADVANTAGES AND THEIR UNDERSTATED FLAWS
 ](https://bitcoinmagazine.com/technical/deterministic-wallets-advantages-flaw-1385450276)
+- [Smart Contracts: 12 Use Cases for Business & Beyond
+A Technology, Legal & Regulatory Introduction — Foreword by Nick Szabo](https://digitalchamber.org/wp-content/uploads/2018/02/Smart-Contracts-12-Use-Cases-for-Business-and-Beyond_Chamber-of-Digital-Commerce.pdf)
