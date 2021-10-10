@@ -234,7 +234,6 @@ Definition - Smart Contract:
 - within which the parties perform on these promises" Nick Szabo, 1996.
 ```
 
-
 - What is Ethereum?
 - What is a Smart Contract
 - Decentralized Applications (DApps)
@@ -246,6 +245,20 @@ Definition - Smart Contract:
 - ICO Case Study 
 - Blockchain and Web 3.0
 - Quiz: Smart Contract intuition 
+
+### Quiz:
+
+- In a nutshell, what is Vitalik Buterin trying to build with Ethereum?
+  - [x] The World's largest super-computer.
+- What is a Smart Contract?
+  - [x] A smart contract is the simplest form of decentralized automation, and is most easily and accurately defined as follows: a smart contract is a mechanism involving digital assets and two or more parties, where some or all of the parties put assets in and assets are automatically redistributed among those parties according to a formula based on certain data that is not known at the time the contract is initiated. [Vitalik Buterin on May 6, 2014](https://blog.ethereum.org/2014/05/06/daos-dacs-das-and-more-an-incomplete-terminology-guide/)
+- What is Gas used for in Ethereum?
+  - [x] Gas is used by applications to pay for running operations on user machines.
+- Which statement about Forks is correct?
+  - [x] A soft fork is backward compatible, a hard fork is not.
+- What is the purpose of a Whitepaper in a Blockchain project?
+  - [x] To describe how the project will leverage the different properties of Blockchain.
+  - [x] To describe why the project needs its own token (or coin) if an ICO has been proposed. 
 #### Resources
 
 - [The Meaning of Decentralization](https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274)
@@ -253,3 +266,4 @@ Definition - Smart Contract:
 ](https://bitcoinmagazine.com/technical/deterministic-wallets-advantages-flaw-1385450276)
 - [Smart Contracts: 12 Use Cases for Business & Beyond
 A Technology, Legal & Regulatory Introduction — Foreword by Nick Szabo](https://digitalchamber.org/wp-content/uploads/2018/02/Smart-Contracts-12-Use-Cases-for-Business-and-Beyond_Chamber-of-Digital-Commerce.pdf)
+- [BOOK: DeFi and the FUTURE of FINANCE, Campbell R. Harvey Ashwin Ramachandran Joey Santoro]()
