@@ -1,3 +1,5 @@
+![ganache](certificate/andrevsilva_blockchain.png)
+
 # Blockchain A-Z: Learn to Build your own Blockchain
 
 ### About this course
@@ -344,7 +346,7 @@ unlock...
 
 ![ganache](/course_edemy/picture/signtransaction.png)
 
-![ganache](/course_edemy/picture/deploytransaction.png)
+**![ganache](/course_edemy/picture/deploytransaction.png)**
 
 [solidity documentation](https://docs.soliditylang.org/en/v0.8.9/)
 
