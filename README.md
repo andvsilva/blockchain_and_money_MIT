@@ -66,7 +66,8 @@ I will answer the questions based on the lectures of this course.
   - How to move value peer-to-peer without any trusted central intermediary?
     - **Answer**: Bitcoin: A Peer-to-Peer Electronic cash System.
       - ```bash
-        "I've been working on a new eletronic cash system that's fully peer-to-peer, with no trusted third party." Satoshi Nakamoto
+        "I've been working on a new eletronic cash system that's fully 
+        peer-to-peer, with no trusted third party." Satoshi Nakamoto
         ```
   - 1 - What is blockchain technology and why might it be a catalyst for change for the financial sector?
     - **My answer:** 
@@ -79,9 +80,11 @@ I will answer the questions based on the lectures of this course.
           - permissioned
           - permissionless (**BITCOIN AND ETHEREUM BLOCKCKAIN**)
         - Distributed Consensus
+
+    The blockchain tecnology will allow to develop of new digital products, and the world finance with purpose to attend the needs of the individuals and the society.
   - 2 - What do you as a student wish to learn from this course, ‘Blockchain and Money’?
     - **My answer:** 
-      In this course I hope to learn blockchain technology and the money rules basics and how this will be inserted in the financial world to the future.
+      In this course I hope to learn blockchain technology and the basic rules of the money and how this will be inserted in the financial world to the future.
 
    - #### [What is money?](https://www.bankofengland.co.uk/-/media/boe/files/speech/2018/the-future-of-money-speech-by-mark-carney.pdf?la=en&hash=A51E1C8E90BDD3D071A8D6B4F8C1566E7AC91418)
         Adam Smith defines money by the roles it plays in society, in particular, how well it serves as:
@@ -96,8 +99,10 @@ I will answer the questions based on the lectures of this course.
       - **My answer:** 
         - The roles and characteristics of money are essencial to reach the 'sound money' whose
     intrinsic value is determined by the laws of the markets, the supply and demand laws. The sound 
-    money allow the individual freedom and prosperity to the society. Today the sound money in one global digital economy will change the way the society works, allowing more people to participate in the 
-    financial world, thanks to the technology capable to reproduce the roles and caracteristics of the physical money in a digital world. 
+    money allow the individual freedom and prosperity to the society. Today, the sound money in one 
+    global digital economy will change the way the society works, allowing more people to participate in the 
+    financial world, thanks to the technology capable to reproduce the roles and caracteristics of the physical 
+    money in a digital world. 
 
     - 2 - What is fiat currency, what are its ledgers, and how does it fit within the history of money?
       - **My answer:** 

@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h2 id="course-blockchain-and-money-mit"><a href="https://ocw.mit.edu/courses/sloan-school-of-management/15-s12-blockchain-and-money-fall-2018/index.htm#">Course: Blockchain and Money MIT</a></h2>
+<h3 id="course-description">Course Description</h3>
+<p>This course is for students wishing to explore blockchain technology's potential use—by entrepreneurs and incumbents—to change the world of money and finance. The course begins with a review of Bitcoin and an understanding of the commercial, technical, and public policy fundamentals of blockchain technology, distributed ledgers, and smart contracts. The class then continues on to current and potential blockchain applications in the financial sector.</p>
+<p><strong>Instructor(s)</strong>
+Prof. Gary Gensler</p>
+<p><strong>MIT Course Number</strong>
+15.S12</p>
+<p><strong>As Taught In</strong>
+Fall 2018</p>
+<p><strong>Level</strong>
+Graduate</p>
+<pre class="hljs"><code><div>Gary Gensler. 15.S12 Blockchain and Money. Fall 2018
+Massachusetts Institute of Technology: MIT OpenCourseWare, 
+https://ocw.mit.edu. License: Creative Commons BY-NC-SA.
+</div></code></pre>
+<p>Here I will document my studies and reading about blockchain technology in this course.
+I will answer the study questions for each lecture in the table of contents below.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=EH6vE97qIP4&amp;list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn">Introduction</a></li>
+<li>Act 1: Blockchain and Money Fundamentals</li>
+<li><a href="https://www.youtube.com/watch?v=5auv_xrvoJk&amp;list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn&amp;index=2&amp;ab_channel=MITOpenCourseWareMITOpenCourseWare">Money, Ledgers, and Bitcoin</a></li>
+<li><a href="https://www.youtube.com/watch?v=0UvVOMZqpEA&amp;t=1s&amp;ab_channel=MITOpenCourseWareMITOpenCourseWare">Blockchain Basics and Cryptography</a></li>
+<li><a href="https://www.youtube.com/watch?v=w7HDA8gUbpQ&amp;ab_channel=MITOpenCourseWare">Blockchain Basics and Consensus</a></li>
+<li><a href="https://www.youtube.com/watch?v=zGDTt9Q3vyM&amp;ab_channel=MITOpenCourseWare">Blockchain Basics and Transactions, UTXO, and Script Code</a></li>
+<li><a href="">Smart Contracts and DApps Guest Lecturer : Prof. Lawrence Lessig, Harvard Law School</a></li>
+<li><a href="">Technical Challenges</a></li>
+<li><a href="">Public Policy</a></li>
+<li><a href="">Permissioned Systems</a></li>
+<li><a href="">Financial System Challenges and Opportunities</a></li>
+<li>Act 2: Blockchain and Use Case Economic</li>
+<li><a href="">Blockchain Economics Guest Lecturer: Rob Gensler, Investor and Financial Analyst</a></li>
+<li><a href="">Assessing Use Cases</a></li>
+<li>Act 3: Financial Sector Use Cases</li>
+<li><a href="">Payments, Part 1 Guest Lecturer: Alin Dragos, MIT Digital Currency Initiatve</a></li>
+<li><a href="">Payments, Part 2</a></li>
+<li><a href="">Central Banks and Commercial Banking, Part 1 Guest Lecturer: Robleh Ali, MIT Digital Currency Initiative</a></li>
+<li><a href="">Central Banks and Commercial Banking, Part 2</a></li>
+<li><a href="">Secondary Markets and Crypto-Exchanges</a></li>
+<li><a href="">A New Approach to Crypto-Exchanges and Payments</a></li>
+<li><a href="">Primary Markets, ICOs, and Venture Capital, Part 1</a></li>
+<li><a href="">Primary Markets, ICOs, and Venture Capital, Part 2</a></li>
+<li><a href="">Post Trade Clearing, Settlement, and Processing</a></li>
+<li><a href="">Trade Finance and Supply Chain</a></li>
+<li><a href="">Digital ID</a></li>
+<li><a href="">Second business write-up due by this class</a></li>
+<li><a href="">Conclusion</a></li>
+</ul>
+<h4 id="good-resource-binance-academy---blockchain--crypto">Good resource: <a href="https://academy.binance.com/en">Binance Academy - Blockchain &amp; Crypto</a></h4>
+<h2 id="reading"><a href="https://ocw.mit.edu/courses/sloan-school-of-management/15-s12-blockchain-and-money-fall-2018/readings/">Reading</a></h2>
+<h3 id="study-questions">Study questions:</h3>
+<p>I will answer the questions based on the lectures of this course.</p>
+<ul>
+<li>
+<h3 id="introduction"><a href="https://www.youtube.com/watch?v=EH6vE97qIP4&amp;list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn">Introduction</a>:</h3>
+<ul>
+<li>
+<p>How to move value peer-to-peer without any trusted central intermediary?</p>
+<ul>
+<li><strong>Answer</strong>: Bitcoin: A Peer-to-Peer Electronic cash System.
+<ul>
+<li>
+<pre class="hljs"><code><div><span class="hljs-string">"I've been working on a new eletronic cash system that's fully peer-to-peer, with no trusted third party."</span> Satoshi Nakamoto
+</div></code></pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>1 - What is blockchain technology and why might it be a catalyst for change for the financial sector?</p>
+<ul>
+<li><strong>My answer:</strong>
+The blockchain technology is a consensus protocol used to create an append-only log, being a transaction ledger that can them be used to form an auditable database:
+<ul>
+<li>Secured via cryptography:
+<ul>
+<li>hash functions for tamper resistance and integrity</li>
+<li>Digital signatures for consent</li>
+<li>Consensus for agreement</li>
+<li>Addresses 'Cost of trust' (Byzantine Generals problem)
+<ul>
+<li>permissioned</li>
+<li>permissionless (<strong>BITCOIN AND ETHEREUM BLOCKCKAIN</strong>)</li>
+</ul>
+</li>
+<li>Distributed Consensus</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>2 - What do you as a student wish to learn from this course, ‘Blockchain and Money’?</p>
+<ul>
+<li><strong>My answer:</strong>
+In this course I hope to learn blockchain technology and the money rules basics and how this will be inserted in the financial world to the future.</li>
+</ul>
+</li>
+<li>
+<h4 id="what-is-money"><a href="https://www.bankofengland.co.uk/-/media/boe/files/speech/2018/the-future-of-money-speech-by-mark-carney.pdf?la=en&amp;hash=A51E1C8E90BDD3D071A8D6B4F8C1566E7AC91418">What is money?</a></h4>
+<p>Adam Smith defines money by the roles it plays in society, in particular, how well it serves as:</p>
+<ul>
+<li><strong>A store of value</strong> with which to transfer purchasing power from today to some future time;</li>
+<li><strong>A medium of exchange</strong> with which to make payments for goods and services; and</li>
+<li><strong>A unit of account</strong> with which to measure the value of a particular good, service, saving or loan.</li>
+</ul>
+</li>
+<li>
+<p><strong>Reading</strong>: <a href="https://voxeu.org/system/files/epublication/Geneva21.pdf">The Impact of Blockchain Technology on Finance: A Catalyst for Change</a></p>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="money-ledgers--bitcoin"><a href="https://www.youtube.com/watch?v=5auv_xrvoJk&amp;list=PLUl4u3cNGP63UUkfL0onkxF6MYgVa04Fn&amp;index=2&amp;ab_channel=MITOpenCourseWareMITOpenCourseWare">Money, Ledgers &amp; Bitcoin</a></h3>
+<ul>
+<li>
+<p>1 - What do the roles (medium of exchange, store of value, &amp; unit of account) and characteristics (durable, portable, divisible, uniform, acceptable &amp; stable) of money mean historically and in today’s digital economy?</p>
+<ul>
+<li><strong>My answer:</strong>
+<ul>
+<li>The roles and characteristics of money are essencial to reach the 'sound money' whose
+intrinsic value is determined by the laws of the markets, the supply and demand laws. The sound
+money allow the individual freedom and prosperity to the society. Today the sound money in one global digital economy will change the way the society works, allowing more people to participate in the
+financial world, thanks to the technology capable to reproduce the roles and caracteristics of the physical money in a digital world.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>2 - What is fiat currency, what are its ledgers, and how does it fit within the history of money?</p>
+<ul>
+<li><strong>My answer:</strong>
+<ul>
+<li><em>fiat currency</em> is a currency used by nacional economies, that is not backed by a physical commodity like gold. <em>Ledger</em> is a book or collection of accounts in which account transactions are recorded, or is basically a way to record economic activity, social relationship or financial relationship. <em>fit within the history of money</em>: fit currency is a nature consequence that was born in the social economy relationship in the society, where the money is a social construct or social consensus mechanism.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>3 - How does Bitcoin fit within the history of money, the emergence of the Internet and failed attempts of cryptographic payment systems?</p>
+<ul>
+<li><strong>My answer:</strong>
+<ul>
+<li>The Bitcoin is a digital money or a peer-to-peer electronic cash system, being the first time in history of money was reproduced in a digital world, solving the classical problem in computer science, the '<a href="https://academy.binance.com/en/articles/double-spending-explained">double spending</a>', by using the internet protocols and the cryptographic hash functions. This is a basically a payment system that allow to the participate to make ecomonic transactions that are record in one ledger, the blockchain, where we have the privacy and liberty garanted by the cryptographic.</li>
+</ul>
+</li>
+</ul>
+<h4 id="good-ledger">Good ledger:</h4>
+<ul>
+<li>Immutable</li>
+<li>Consistency</li>
+<li>Timestamp</li>
+<li>Ownership</li>
+<li>Acurracy</li>
+<li>Description of the transaction</li>
+<li>Comprehensive</li>
+</ul>
+<h4 id="fiat-currency">Fiat Currency</h4>
+<ul>
+<li>Social &amp; Economic consensus.</li>
+<li>Represented by central bank liabilities &amp; commercial bank deposits.</li>
+<li>Relies upon system of ledgerss integrated into fractional banking system.</li>
+<li>Accepted for taxes.</li>
+<li>Notes &amp; Coins are legal tender for all debts public &amp; privace.</li>
+</ul>
+</li>
+<li>
+<p><strong>Reading</strong>:</p>
+<ul>
+<li><a href="https://spectrum.ieee.org/at-work/innovation/a-brief-history-of-money">A Brief History of Money</a></li>
+<li><a href="https://medium.com/unraveling-the-ouroboros/a-brief-history-of-ledgers-b6ab84a7ff41">A Brief History of Ledgers</a></li>
+</ul>
+<h4 id="characteristics-of-money">Characteristics of Money</h4>
+<ul>
+<li>Durable</li>
+<li>Portable</li>
+<li>Divisible</li>
+<li>Uniform/Fungible</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4 id="blockchain-basics--cryptography"><a href="https://www.youtube.com/watch?v=0UvVOMZqpEA&amp;t=2s&amp;ab_channel=MITOpenCourseWare">Blockchain Basics &amp; Cryptography</a></h4>
+<ul>
+<li><a href="https://bitcoin.org/en/how-it-works">Bitcoin - Technical Features</a>
+<ul>
+<li>Cryptography &amp; Timestamped logs
+<ul>
+<li>Cryptographic Hash Functions</li>
+<li>Timestamped Append-only Logs(Blocks) (immutable digital ledger, distributed)</li>
+<li>Block Headers &amp; Merkle Trees</li>
+<li>Asymmetric Cryptography &amp; Digital signatures</li>
+<li>Addresses</li>
+</ul>
+</li>
+<li>Decentralized Network Consensus
+<ul>
+<li>Consensus through Proof-of-Work (PoW)</li>
+<li>Network of Nodes</li>
+<li>Native Currency (<strong>Technological design feature that is part of the economic incentive system</strong>, Bitcoin mining)</li>
+</ul>
+</li>
+<li>Transactions Script &amp; UTXO
+<ul>
+<li>Transaction Inputs &amp; Outputs</li>
+<li>Unspent Transaction Output(UTXO)</li>
+<li>Scripting Language</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>1 - What are the design features — cryptography, append-only timestamped blocks, distributed consensus algorithms, and networking—of Bitcoin, the first use case for blockchain technology?
+<ul>
+<li><strong>My answer:</strong>
+<ul>
+<li><em>cryptography</em> is methods and techniques to provide secure and protect information, in <em>append-only timestamped blocks</em> is a chain of block of data that are store in immutable way in time, using the concept called <em>distributed consensus algorithms</em>, where we do not have a central authority in the <em>networking</em>, where nobody has a control, but all the participants follow the protocol, the Bitcoin is a the first time in history that the blockchain technology are used to make money programming.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>2 - What are cryptographic hash functions, asymmetric cryptography and digital signatures? How are they utilized to help make blockchain technology verifiable and immutable?
+<ul>
+<li><strong>My answer:</strong>
+<ul>
+<li><em>cryptographic hash function</em> is an algorithm that makes an arbitrary amount of data input and produces
+a fixed-size output of enciphered text called a hash value, or just 'hash'. <em>asymmetric cryptography and digital signatures</em> is a way to encrypt a message to protect the information send through the internet, and only the people with the digital signatures can access the information encrypted. The blockchain technology is formated by the design features, where we have a ledger that record the economic transactions between the participants, and the data for each block of transactions are hashed with the timestamp and pratically infeasible to change (immutable), for one transaction we have the asymmetric cryptographic between parties, where one party use your digital signature to sign the transaction with your private key to another party (public key), and only this party with the private key link cryptographic to this public key will have access to the Bitcoin. This ledger (history of all transactions) is public and everyone can verify the authenticity of the transaction.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>3 - What is the double-spending problem and how it is addressed by blockchain technology?
+<ul>
+<li><strong>My answer:</strong> Double-spending is a problem that arise in the beginning of the creation of the digital money, because the digital token can be spent more than once. For the first time this problem was solved by Satoshi Nakamoto with the creation of the <em>Bitcoin</em> using the blockchain technology.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4 id="blockchain-basics-and-consensus"><a href="https://www.youtube.com/watch?v=w7HDA8gUbpQ&amp;t=7s">Blockchain Basics and Consensus</a></h4>
+<pre class="hljs"><code><div>Blockchain - Proof-of-Work (PoW)
+
+Innovation -- Chained proof of Work <span class="hljs-keyword">for</span> Distribuited Network Consensus 
+              &amp; Timestamping
+
+<span class="hljs-comment">################################################################</span>
+Block:
+  - Previous Hash
+  - Nonce
+  Database:
+    -------------------------------
+    - Transactions (Tx)
+    - ...
+    -------------------------------
+
+    Hash Function:
+                     Known                  Known           Known     Unknown   
+     SHA256( Hash of previous block + Transactions <span class="hljs-built_in">hash</span> + Timestamp + Nonce)
+
+     Output:
+     ---&gt; 0000.................................
+   <span class="hljs-string">'Difficulty (zeros in the beginning of the hash)'</span>
+
+   Pow Difficulty
+   - Targets 10 minutes average block generation time
+   - Defined by the hashtag of leading zeros <span class="hljs-built_in">hash</span> output
+     requires to solve PoW
+   - Adjusts every 2016 blocks - about every two weeks
+
+
+   Genesis Block:
+   Hash
+    The <span class="hljs-built_in">hash</span> of the genesis block: 2021-01-03
+    000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f 
+    
+    has two more leading hex zeroes than were required <span class="hljs-keyword">for</span> an early block.
+
+    <span class="hljs-comment">## https://www.blockchain.com/btc/block/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f</span>
+
+
+    Hash: 00000000000000000008ee81042efa8e314ab763e386d182b35e218d771d0260
+    Confirmations: 1
+    Timestamp: 2021-06-20 11:01
+    Height: 688289
+    Miner: ViaBTC
+    Number of Transactions: 1,077
+    Difficulty: 19,932,791,027,262.74
+    Merkle root: b4ba6ed057353bd444012b9262f1ccb39c782052e56a71c7677a2e905813eafc
+
+<span class="hljs-comment">#########################################################################</span>
+
+</div></code></pre>
+<pre class="hljs"><code><div> <span class="hljs-string">'Blockchain - Consensus supports longest Chain'</span>
+</div></code></pre>
+<p><strong>Bitcoin Mining Evolution</strong></p>
+<pre class="hljs"><code><div>- Central Processing Units (CPUs) 2009-2010 &gt;&gt;&gt; 2 - 20 MH/s
+- Graphics Processing Units (GPUs) 2010-2013 &gt;&gt;&gt; 20-300 MH/s
+- Application Specific Integrated Circuit (ASICs) &gt;&gt;&gt; 2013-2018 4 - 16 TH/s
+</div></code></pre>
+<p><strong>Proof-of-Stack - Consensus Mechanism</strong></p>
+<pre class="hljs"><code><div><span class="hljs-comment"># Alternative Consensus Protocols</span>
+- Generally Randomized of Delegated Selection of Nodes to Validate next Block
+- May have added mechanism to confirm Block Validators Work
+- Proof of Stake (PoS) - Stake <span class="hljs-keyword">in</span> Native Currency
+- Proof of Activity - Hydrid of PoW and PoS
+- Proof of Burn - Validation comes with Burning of Coins 
+- Proof of Capacity (storage or Space) - Based upon Hardware Space
+
+Delefated selection May be based upon tiered System of Nodes
+
+Major Permissionless Blockchain Applications still use Proof-of-Work
+</div></code></pre>
+<p><strong>Network</strong></p>
+<pre class="hljs"><code><div>- <span class="hljs-string">'Full Nodes'</span> - Store full blockchain &amp; able to validate all transactions
+- <span class="hljs-string">'Pruning Nodes'</span> - Prune transactions after validation and aging
+- <span class="hljs-string">'Lightweight Nodes'</span> - Simplified Payment Verification (SPV) nodes - Stores Blockchain Headers only
+- <span class="hljs-string">'Miners'</span> - Performs Proof of Work &amp; Create new Blocks - Do not need to be a Full Node
+- <span class="hljs-string">'Mining Pool Operators'</span>
+- <span class="hljs-string">'Wallets'</span> - Store, View, Send and Receive Transactions &amp; Create Key Pairs.
+- <span class="hljs-string">'Mempool'</span> - Store of unconfirmed (yet validated) Transactions 
+</div></code></pre>
+<ul>
+<li>
+<p>1 - What is the Byzantine Generals problem? How does proof-of-work and mining in Bitcoin address it? More generally by blockchain technology?</p>
+<ul>
+<li><strong>My answer:</strong> Byzantine Generals problem arise in a group of generals, in command of a division of the Bizantine army, where the generals must decide whether to attack the city or retreat. Some generals can act as traitors being in disagreement with the others generals that have the intention to attack together to avoid losses. The communication between the generals by messenger to reach agreement on a strategy, maybe the message can be delayed or disappear. This problem describes nicely the <em><strong>distribuited consensus problem</strong></em>, the generals are the computers and the traitors are faulty computers, the messengers are data being sent over an unrealiable network. In a blockchain network, this problem is solve by the consensus algorithm used to agree on the ledger in Satoshi's Bitcoin is based on participants competing to win rewards denominated in bitcoin. Its breakthrough feature is a <code>proof-of-work</code> function, which imposes computation costs on each participant in the competition. The participants who engage in this proces are called <strong>miners</strong>. In essence, each miner collects a set of outstanding transactions, referred to as a <code>block</code>, while simultaneoously competing to find a randomly chosen string of numbers and letters. Once a miner finds the required string, they broadcast it, along with block, to the rest of the network and claim their reward, comprising a combination of freshly issued bitcoins and any fees that users have attached to transactions in the block. The competition for the next block begins, building on the chain of blocks that have come before. This is why the transaction ledger is known as a <strong>blockchain</strong>. Another important feature is that the bitcoin protocol includes an algorithm that automatically adjusts the difficulty of completing the next block as the overall processing power of the computing network changes. As more miners join the network, the difficulty of the cryptographic challenge rises, and as miners leave it becomes easier to solve.</li>
+</ul>
+</li>
+<li>
+<p>2 - What other consensus protocols are there? What are some of the tradeoffs of alternative consensus algorithms, proof-of-work, proof-of-stake, etc.?</p>
+<ul>
+<li><strong>My answer:</strong> Yes, there are others consensus protocols with different approaches, like <code>proof-of-stack, proof of activity, proof of burn and proof of capacity</code>. There are a big differences between proof-of-work (PoW) and proof-of stack (PoS), because the PoW is important to provide a cryptography security and privacy to participants in the blockchain, e.g. the Bitcoin, but for this consensus protocol is necessary to invest a lot of money in computing power and electricity to mining, the blocks, where for design we have in principle a decentralized network that is the core fundamental written by Satoshi Nakamoto in the whitepaper, and by the way, this fundamental does not change over the 10 years and this make the &quot;true value&quot; of the BTC, the underlying blockchain technology. In the other hand, the PoS, the approach is different, the tradeoff now is not necessary computing power and a high energy supply to the protocol, i.e., the participants stack your coins and get a reward proporcional to the quantity of coins locked in the protocol, in this network we have a more centralized environment, that is not good in provide a security and privacy, like the PoW, because now we have a point of failure.</li>
+</ul>
+</li>
+<li>
+<p>3 - How does Bitcoin record transactions? What is unspent transaction output (UTXO)?  What is script code embedded in each Bitcoin transaction and how flexible a programming language is it?</p>
+<ul>
+<li><strong>My answer:</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4 id="blockchain-basics-and-transactions-utxo-and-script-code"><a href="https://www.youtube.com/watch?v=zGDTt9Q3vyM&amp;ab_channel=MITOpenCourseWare">Blockchain Basics and Transactions, UTXO, and Script Code</a></h4>
+</li>
+</ul>
+<pre class="hljs"><code><div>                       Transaction Format 
+
+-------------------------------------------------------------|
+|Input                           |  Output                   |
+|                                |                           |
+|Previous transaction ID         |  Value                    |
+|Index                           |  Public Key               |
+|Signature                       |  (Bitcoin Address)        |
+--------------------------------------------------------------
+|                      lock_time                             |
+--------------------------------------------------------------
+
+Previous transaction ID, Index, Signature -- Uniquely identifies an output
+
+One satoshi 10^8 = 1 Bitcoin (BTC)
+
+Coinbase Transaction
+
+Reward <span class="hljs-keyword">for</span> solving Proof-of-Work
+- Only Input is the coinbase block reward
+- Reward halves(1/2s) every 210,000 blocks
+    - Originally 50 Bitcoins per block
+    - 1º Halving (28 November 2012): 25 Bitcoins (50 % Mined)
+    - 2º Halving (9 July 2016): 12.5 Bitcoins (75 % Mined)
+    - 3º Halving (11 May 2020): 6.25 Bitcoins (87.5 % Mined)
+    - 4º Halving (Expected 2024): 3,125 Bitcoins (96.875 % Mined)
+    - 5º Halving (Expected 2028): 1.5625 Bitcoins (98.4375 %)
+    - 6º Halving (Expected 2032	): 0.78125 Bitcoins (99.21875)
+- Output may not be used as a transaction input until another 100 Blocks 
+- Recorded as First Transaction <span class="hljs-keyword">in</span> Merkle Tree
+- May Include 100 Bytes of arbitrary data
+    - Used <span class="hljs-keyword">for</span> additional Nonce
+    - Genesis Block included Headline from Financial Times:
+        - <span class="hljs-string">'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks
+</span></div></code></pre>
+<h4 id="unspent-transaction-output-utxo-set">Unspent Transaction Output (UTXO) Set</h4>
+<ul>
+<li>Bitcoin transaction outputs that have not been spent at a given time
+<ul>
+<li>Contains All currently Unspent transaction Outputs</li>
+<li>Speeds up Transactions validation Process</li>
+<li>Stored using a LevelDB database in Bitcoin Core called ´chainstate´</li>
+</ul>
+</li>
+</ul>
+<pre class="hljs"><code><div>Bitcoin Script
+    - Programming Code used <span class="hljs-keyword">for</span> Transactions
+  - Stack-based codem, with no loops (turning-complete)
+  - Provides a Flexible Set of Instructions <span class="hljs-keyword">for</span> Transanctions validation and Signature Authentication
+</div></code></pre>
+<ul>
+<li>
+<ol>
+<li>As many design features—public key cryptography, hash functions, append-only timestamped logs, digital cash, and proof-of-work—pre-date Bitcoin, what was the novel innovation of Santoshi Nakamoto?
+<ul>
+<li><strong>My answer:</strong></li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>How do economic incentives work within blockchain technology to maintain decentralized ledgers and avoid double spending? What are the incentives of consensus protocols and mining?
+<ul>
+<li><strong>My answer:</strong></li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Who is Satoshi Nakamoto? (Only kidding a bit.)
+<ul>
+<li><strong>My answer:</strong></li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+
+</body>
+</html>
